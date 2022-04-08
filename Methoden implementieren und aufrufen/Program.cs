@@ -21,10 +21,28 @@ namespace Methoden_implementieren_und_aufrufen
             nachname[3] = "Starr";
        
             short[] uebernachtungen = { 1, 4, 12, 3};
+            double[] preise = { 82.46, 329.84, 989.52, 247.38 };
 
+            Console.WriteLine("Bitte geben sie ihre Daten ein");
+            string eingabe_str = Console.ReadLine();
+            short eingabe_short;
             
+            bool flag = short.TryParse(eingabe_str, out eingabe_short);
+
+            if (flag == false)
+            {
+                Console.WriteLine((eingabe_short, zimmernummer, vorname, nachname,preise));
+            }
+            else
+            {
+               // GetData();
+            }
+              
+
+       
 
 
         }
+
     }
 }
